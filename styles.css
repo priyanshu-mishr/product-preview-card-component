@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', cursive;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    max-width: 600px;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.image{
+    background-image: url("images/image-product-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.card-details {
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h6 {
+    font-size: 12px;
+    letter-spacing: 6px;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: "Fraunces", cursive;
+    font-size: 35px;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+}
+
+.product-description {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.discount-price {
+    font-family: "Fraunces", cursive;
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+    margin-right: 25px;
+}
+
+.actual-price {
+    text-decoration: line-through;
+}
+
+.btn{
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn > img {
+    margin-right: 10px;
+}
+
+.btn:hover{
+    background-color:  hsl(160, 62%, 14%);
+}
+
+@media (max-width: 660px){
+
+    .box {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        height: 620px;
+    }
+
+    .image{
+        background-image: url("images/image-product-mobile.jpg");
+        height: 250px;
+    }
+
+    .card-details {
+        padding: 0 30px 30px;
+    }
+
+    h6,.product-description, .price {
+        margin: 10px 0;
+    }
+
+    h6 {
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+
+    h1 {  
+        font-size: 31px;
+    }
+
+    .product-description{
+        font-size: 14px;
+    }    
+}
+    
